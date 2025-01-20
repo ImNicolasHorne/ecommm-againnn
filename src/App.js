@@ -14,11 +14,11 @@ function App() {
 
   function addToCart(book) {
     const dupeItem = cart.find(item => +item.id === +book.id);
-    if (dupeItem) {
-      dupeItem.quantity += 1;
-      console.log(dupeItem);
-      setCart([...cart, { ...book, quantity: 1 }]);
-    }
+    if (dupeItem) 
+    dupeItem.quantity += 1;
+    console.log(dupeItem);
+    setCart([...cart, { ...book, quantity: 1 }]);
+    
   }
 
   useEffect(() => {
